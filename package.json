@@ -1,0 +1,39 @@
+{
+  "name": "gulp-mocha-browserify-sweet",
+  "version": "0.1.0",
+  "description": "Generates a suite file from gulp.src glob on the fly for Browserify/Mocha",
+  "keywords": [
+    "gulp",
+    "browserify",
+    "mocha"
+  ],
+  "author": {
+    "name": "toran billups",
+    "email": "toranb@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toranb/gulp-mocha-browserify-sweet"
+  },
+  "scripts": {
+    "test": "mocha test/*.spec.js --reporter tap"
+  },
+  "dependencies": {
+    "through": "*",
+    "gulp-util": "~2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "chai": "^1.9.1",
+    "mocha": "^1.18.2",
+    "gulp-concat": "^2.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.26",
+    "npm": ">=1.2.10"
+  },
+  "main": "index.js",
+  "licenses": [
+    "MIT"
+  ]
+}
