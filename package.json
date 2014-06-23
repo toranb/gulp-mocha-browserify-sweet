@@ -1,6 +1,6 @@
 {
   "name": "gulp-mocha-browserify-sweet",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generates a suite file from gulp.src glob on the fly for Browserify/Mocha",
   "keywords": [
     "gulp",

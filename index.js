@@ -29,6 +29,9 @@ var mochaSuite = function(opts) {
         var remove = filePath.split(opts.startWith + path.sep)[0];
         filePath = '../' + filePath.replace(remove, '');
     }
+    if (opts.addPrefix) {
+        filePath = opts.addPrefix + '/' + filePath;
+    }
     buffer.push(
       pre,
       new Buffer(filePath),

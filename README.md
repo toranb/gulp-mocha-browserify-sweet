@@ -63,3 +63,22 @@ You can instead get the following by adding {startWith: 'build'}
 ```javascript
     require('./../build/test/foo.spec.js');
 ```
+
+#### opts.addPrefix
+Type: `String`
+
+This optional param will add any prefix string to the filename
+
+For example:
+
+If you want to add test to the generated file that starts out like this
+
+```javascript
+    require('./unit/example.spec.js');
+```
+
+You can add the test prefix by adding {addPrefix: '../test'}
+
+```javascript
+    require('./../test/unit/example.spec.js');
+```
