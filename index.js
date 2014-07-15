@@ -44,7 +44,9 @@ var mochaSuite = function(opts) {
     var self = this;
     var suite;
     if(buffer.length === 0) {
-      throw new PluginError('gulp-mocha-browserify-sweet', 'No specs in suite.');
+      this.emit('error', new PluginError(
+          'gulp-mocha-browserify-sweet', util.colors.red('No specs in suite.')
+      ));
     }
     suite = new File({
       cwd: '.',
